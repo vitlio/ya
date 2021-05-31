@@ -5,4 +5,4 @@ const store = createStore(reducers);
 
 export default store;
 
-// store.subscribe(() => console.log(store.getState()))
+store.subscribe(() => console.log(store.getState()))
