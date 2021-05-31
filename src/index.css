@@ -1,0 +1,114 @@
+body{
+  font-family: sans-serif;
+}
+.search{
+    display: flex;
+    width: 100%;
+    margin-right: 5px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #fc0;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.searchBtn{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+.searchBtnX{
+    cursor: pointer;
+    margin: 2px 10px 0 10px;
+    border: none; 
+    width: 40px;
+    height: 35px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.searchInput{
+    border: none;
+    width: 100%;
+}
+input::placeholder {
+    font-size: 1rem;
+    color: rgb(175, 175, 175);
+}
+input:focus::placeholder{
+    visibility: hidden;
+}
+input:focus{
+    outline: 0;
+}
+
+/* loader start*/
+
+.lds-dual-ring-wraper {
+    display: block;
+    text-align: center;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fdd;
+    border-color: #fdd transparent #fdd transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/*loader end*/  
+/*book item*/
+.book-item-wrapper{
+  min-width: 18.181818181818183%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+  justify-content: space-between;
+  border: 1px solid rgb(216, 214, 214);
+}
+.book-item-wrapper img{
+  max-width: 100px;
+  margin: 25px auto;
+}
+.book-item-wrapper p{
+  max-width: 150px;
+  margin: 15px auto;
+}
+/*book item end*/
+.list{
+  display: flex;
+  flex-wrap: wrap;
+}

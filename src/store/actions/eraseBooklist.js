@@ -1,0 +1,3 @@
+const ERASE_BOOKLIST = 'ERASE_BOOKLIST';
+
+export default ERASE_BOOKLIST;
