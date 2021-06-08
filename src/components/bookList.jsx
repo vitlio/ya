@@ -15,7 +15,9 @@ export default function BookListPage(props){
         ||'https://thumbs.dreamstime.com/b/эскиз-книг-рисунки-изображенные-на-рисунках-содержат-кучу-старого-159243668.jpg'} 
         title={item.title}
         author={item.author_name&&item.author_name[0]} 
-        item={item}/> );
+        item={item}
+        /> );
+
     return(
         <div className="list">
             {bookListElements}
